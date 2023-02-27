@@ -4,8 +4,8 @@ const cors = require("cors");
 
 const app = express();
 
-app.listen(25565, () => {
-    console.log('Now listening on port ' + 25565);
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Now listening on port ' + process.env.PORT || 3000);
 });
 
 app.use(cors());
